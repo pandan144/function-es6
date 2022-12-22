@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	 <title>ES6 feature</title>
+</head>
+<body>
+    
+<script>
+
+
+	//Normal function
+		
+		function sum(){
+		;  	var add=22+5;
+			return add;
+		}
+		console.log(sum());
+		
+	// Arrow function 
+		
+		main=()=>console.log(10);
+		
+		main()
+		
+	// callback function
+	
+		function mainFun(getfun){
+		
+		getfun();
+		}
+		
+		function callBack(){
+			var math=20+10;
+			console.log(math)
+		}
+		
+		mainFun(callBack)
+	
+
+	//arguments
+		
+	function su(){
+		console.log(arguments);
+	}
+	su(1,2,3)
+	
+	//default value to param
+			
+			function myfun(a,b=30){
+					var c=a+b;
+					console.log(a+b);
+					return c;
+				}
+				myfun(5)
+		
+		
+	
+	
+	//spread
+		var ac=[2,4,6,6]
+		
+		console.log(ac);
+		
+		var ab=[...ac];
+		
+		console.log(ab)
+	//using object
+	
+	var obj={
+		a:'S.A.K.Pand',
+		b:21,
+	}
+
+	var obj1={...obj};
+		
+	obj1.a="pand";	
+	console.log(obj);
+	console.log(obj1);
+		
+		var obj1={
+			normalFu(){
+				console.log(this .name);
+
+				var arrFun=()=>{
+					console.log(this);
+			}
+			arrFun();
+			},			
+		}
+		obj1.normalFu.call(obj);
+		
+		
+	
+	
+	//destructuring
+	  
+		var key={
+			name:'pand',
+			age:20,
+		}
+		const {name,age}=key;
+		
+		console.log(name,age);
+		
+	//using array
+		var arr=[0,1,2,3,4,5];
+		
+		const [a,b,c,d,e,f]=arr;
+		
+		console.log(a,b,c,d,e,f);
+	
+	//template literals
+	
+	var names="ARUL";
+	console.log(`pand ${names}`)
+
+	//using array
+		
+			var arr=[0,1,2,3,4]
+			var arr1=[...arr]
+			arr1[0]=5;	
+				
+			console.log(arr);	
+			console.log(arr1);
+	
+	
+</script>
+
+
+</body>
+</html>
